@@ -8,8 +8,7 @@ from md5_hash import hash_gen
 
 if __name__ == '__main__':
 
-    # --------------------Задание №1-----------------------------#
-
+    # --------------------Задание №1-----------------------------
     one = country_iter('files/countries.json')
     new_countries = []
     try:
@@ -23,6 +22,7 @@ if __name__ == '__main__':
         fm.save_file(content, 'files/write_per_line')
         new_countries.append(content)
     fm.save_json(new_countries, 'files/new_countries')
+
     # --------------------Задание №2-----------------------------
     for item in hash_gen('files/write_per_line.txt'):
         print(item)
